@@ -1,15 +1,14 @@
 /*****
-Theme Name: MH Magazine
+Theme Name: SAP Insider Theme
 Theme URI: https://www.mhthemes.com/themes/mh/magazine/
-Author: MH Themes
+Author: MH Themes; Bruce Kofi
 Author URI: https://www.mhthemes.com/
-Description: MH Magazine is a clean, modern and fully responsive premium magazine WordPress theme for blogs, online magazines, news websites and other editorial projects. The theme includes useful page templates, several custom widgets and advanced theme options including colorpickers with unlimited colors to create your own color scheme.
-Version: 3.8.6
+Description: SAP Insider Theme forked from the Magazine mh-theme.
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: mh-magazine
+Text Domain: wis-sapinsider
 Domain Path: /languages/
-Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, threaded-comments, full-width-template, post-formats, translation-ready, rtl-language-support, blog, entertainment, news
 *****/
 
 /***** CSS Reset based on the work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/ v2.0 *****/
