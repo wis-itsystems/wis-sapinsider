@@ -1,4 +1,9 @@
 <?php
+define( 'WP_DEBUG', true );
+
+// access token for updates:
+// $myUpdateChecker->setAuthentication('7ede950e6268eeb025f95b726489c9ee41fd8c08');
+
 
 /***** Fetch Theme Data & Options *****/
 
@@ -217,5 +222,16 @@ include_once(ABSPATH . 'wp-admin/includes/plugin.php');
 if (is_plugin_active('woocommerce/woocommerce.php')) {
 	require_once('woocommerce/mh-custom-woocommerce.php');
 }
+require get_template_directory() . '/includes/plugin-update-checker/plugin-update-checker.php';
+// updates
+require 'includes/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4p3_Factory::buildUpdateChecker(
+	'https://github.com/wis-itsystems/wis-sapinsider/',
+	__FILE__,
+	'wis-sapinsider'
+);
+
+//Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('dev');
 
 ?>
