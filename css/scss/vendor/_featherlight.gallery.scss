@@ -1,0 +1,83 @@
+/**
+ * Featherlight Gallery – an extension for the ultra slim jQuery lightbox
+ * Version 1.7.9 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2017, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+@media all {
+	.featherlight-next,
+	.featherlight-previous {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		bottom: 0;
+		width: 50px;
+		cursor: pointer;
+		user-select: none;
+		/* IE9 hack, otherwise navigation doesn't appear */
+		background: rgba(0,0,0,0);
+		span {
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: -33px;
+			right: auto;
+			width: 30px;
+			text-align: center;
+			font-size: 80px;
+			line-height: 80px;
+			margin-top: -40px;
+			color: #fff;
+			font-style: normal;
+			font-weight: normal;
+			white-space: pre-line;
+		}
+		&:hover {
+			background: rgba(0,0,0,0.15);
+			span {
+				display: inline-block;
+			}
+		}
+	}
+
+	.featherlight-previous {
+		left: 10px;
+		right: auto;
+	}
+
+	.featherlight-next span {
+		right: 5px;
+		left: auto;
+	}
+
+
+	.featherlight-swipe-aware .featherlight-next,
+	.featherlight-swipe-aware .featherlight-previous {
+		display: none;
+	}
+
+	/* Hide navigation while loading */
+	.featherlight-loading .featherlight-previous, .featherlight-loading .featherlight-next {
+		display:none;
+	}
+
+	/* Hide navigation in case of single image */
+	.featherlight-first-slide.featherlight-last-slide .featherlight-previous,
+	.featherlight-first-slide.featherlight-last-slide .featherlight-next {
+		display:none;
+	}
+}
+
+/* Always display arrows on touch devices */
+@media only screen and (max-device-width: 1024px){
+	.featherlight-next:hover,
+	.featherlight-previous:hover {
+		background: none;
+	}
+	.featherlight-next span,
+	.featherlight-previous span {
+		display: block;
+	}
+}
