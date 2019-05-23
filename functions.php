@@ -1,5 +1,5 @@
 <?php
-define( 'WP_DEBUG', true );
+
 
 // access token for updates:
 // $myUpdateChecker->setAuthentication('7ede950e6268eeb025f95b726489c9ee41fd8c08');
@@ -235,6 +235,8 @@ if (!function_exists('wis_magazine_widgets_init')) {
     }
 }
 add_action('widgets_init', 'wis_magazine_widgets_init');
+
+
 
 /***** Include additional files *****/
 
